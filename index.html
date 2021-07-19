@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <ul id="ulContent">
+        <li id="liContent">
+            <div style="width: 190px;height: 150px;border-radius: 10px;">
+                
+                <div style="width: 190px;height: 20px;">
+                    <p disabled="disabled" style="text-align: center;margin-top: 0px;">抢红包</p>
+                </div><!-- 游戏名称 -->
+                
+                <a href="" id="openGame_a">
+                    <img id="fengmianImg" src="/img/190120sh.png" alt="">
+                </a><!-- 游戏缩略图 -->
+    
+
+                <div class="meta">
+                    <i><p id="playerCount" style="text-align: center;margin-top: 0px;"></p></i>
+                </div>
+
+                <div style="text-align: center;">
+                    <span>
+                        <i>发布日期</i>
+                    </span>
+                    <span>
+                        <i id="time"></i>
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+    <script>
+        var playerCount=document.getElementById("playerCount");
+        var date=document.getElementById("time");
+        playerCount.innerText="15w人正在玩";
+        date.innerText="2021-7-19";
+    </script>
+
+</body>
+</html>
